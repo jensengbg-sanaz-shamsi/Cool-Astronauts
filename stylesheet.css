@@ -1,0 +1,452 @@
+body {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(167, 161, 161, 0.274);
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "s1 s1 s1 art1 art1 art1"
+                        "s1 s1 s1 art2 art2 art2"
+                        "nav nav nav nav nav nav"
+                        "s2 s2 s2 s2 s2 s2"
+                        "wrapper wrapper wrapper wrapper wrapper wrapper"
+                        "s4 s4 s4 s4 s4 s4"
+                        "d1 d1 d2 d2 d3 d3"
+                        "d4 d4 d5 d5 d6 d6"
+                        "div div div div div div"
+                        "s3 s3 s3 s3 s3 s3";
+}
+
+.s1 {
+    background-color: #c7ddea;
+    grid-area: s1;
+}
+.art1 {
+    background-color: #f17949;
+    grid-area: art1;
+}
+
+.art2 {
+    background-color: #fab131;
+    grid-area: art2;
+}
+nav {
+    grid-area: nav;
+}
+.s2 {
+    background-color: #a9a19e;
+    grid-area: s2;
+}
+.s4 {
+    background-color: #fab131;
+    grid-area: s4;
+}
+
+/*bilder*/
+.a1 {
+    border: white solid 2px;
+    grid-area: a1;
+}
+.a2 {
+    border: white 2px solid;
+    grid-area: a2;
+}
+.a3 {
+    border: white 2px solid;
+    grid-area: a3;
+} 
+
+/*bilder*/
+
+.d1 {
+    background-color: #c7ddea;
+    grid-area: d1;
+}
+.d2 {
+    background-color: #ffffff;
+    grid-area: d2;
+}
+.d3 {
+    background-color: #ebebeb;
+    grid-area: d3;
+}
+.d4 {
+    background-color: white;
+    grid-area: d4;
+}
+.d5 {
+    background-color: #f17949;
+    grid-area: d5;
+}
+.d6 {
+    background-color: #ffffff;
+    grid-area: d6;
+}
+div {
+    grid-area: div;
+    background-color: #a9a19e;
+}
+.s3 {
+    background-color: gray;
+    grid-area: s3;
+}
+
+/*styling*/
+
+img {
+   display: flex;
+    width: 300px;
+    margin-left: auto;
+    background-size: 100%;
+    align-self: flex-end;
+    margin-top: auto;
+    object-fit: contain;
+}
+
+.larg-hd{
+    display: flex;
+    height: 40%;
+    width: 70%;
+    flex-direction: column;
+    background-color: #c7ddea;
+    align-self: flex-start;
+    margin-left: 20%;
+}
+    
+.s1 {
+    display: flex;
+    flex-direction: column   
+}
+
+h1 {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    
+}
+.dark {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+span {
+    color: white;
+}
+
+button {
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 3rem;
+    width: 131px;
+}
+/*section1*/
+
+.art1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+    font-family: 'frank ruhl libre';
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+.art2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 41px;
+    letter-spacing: -0.02em;
+    font-family: 'frank ruhl libre';
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+/*art*/
+
+/* nav started*/
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration-line: none;
+    color: grey;
+}
+
+.home {
+    font-weight: bold;
+    color:black;
+}
+
+/* nav finished*/
+
+.s2 {
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    height: 14rem;
+    padding-top: 60px;
+    padding-left: 150px;
+}
+.concept {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-top: 1rem;
+}
+.butt{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    font-family: fira;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+   align-self: flex-start;
+   font-size: small;
+   padding-top: 3px;
+   padding-bottom: 3px;
+
+  
+
+}
+.right {
+    max-width: 30%;
+margin-left: 15rem;
+margin-top: 1rem; 
+}
+/*class S2 finished*/
+.wrapper {
+    grid-area: wrapper;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateY(0);
+}
+.wrapper > section > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 10px;
+}
+.wrapper > section > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.child {
+    width: 250px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    transform: translateY(150px);
+}
+.img-child{
+    height: 150px;
+    background-image: url(https://raw.githubusercontent.com/zocom-christoffer-wallenberg/Project-layout-insurance/master/img/child.png);
+    background-color: #C7DDEA;
+    background-repeat: no-repeat;
+    background-position: 75px 17px;
+    background-size: 38%;
+    border-radius: 4px;
+    margin-top: -30px;
+    width: 90%;
+    display: flex;
+    margin-left: 10px;
+}
+.adult {
+    width: 250px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    transform: translateY(150px);
+}
+.img-adult {
+    height: 150px;
+    background-image: url(https://raw.githubusercontent.com/zocom-christoffer-wallenberg/Project-layout-insurance/master/img/adult.png) ;
+    background-color: #FAB131;
+    background-repeat: no-repeat;
+    background-position: 70px 20px;
+    background-size: 39%;
+    border-radius: 4px;
+    margin-top: -30px;
+    width: 90%;
+    display: flex;
+    margin-left: 10px;
+}
+.old {
+    width: 250px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    transform: translateY(150px);
+}
+.img-old {
+    height: 150px;
+    background-image: url(https://raw.githubusercontent.com/zocom-christoffer-wallenberg/Project-layout-insurance/master/img/old.png) ;
+    background-color: #F17949;
+    background-repeat: no-repeat;
+    background-position: 50px 35px;
+    background-size: 55%;
+    border-radius: 4px;
+    margin-top: -30px;
+    width: 90%;
+    display: flex;
+    margin-left: 10px;
+}
+
+
+/*class S4 started*/
+.s4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+
+}
+.hej{
+    color: white;
+    margin-top: 10rem;
+    text-align: center;
+    font-family:'frank ruhl libre';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    }
+
+.left{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10rem;
+    color: rgba(0, 0, 0, 0.6);
+} 
+/*class S4 finished*/ 
+
+/*article d1 started*/
+.d1{
+    display: flex;
+    justify-content: center;
+}
+.works{
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.8);
+}
+/*article d1 ended*/
+
+/*article d2 started*/
+.d2,.d3,.d4,.d5,.d6 {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+
+}
+
+.box1{
+font-family: Frank Ruhl Libre;
+font-style: normal;
+font-weight: 900;
+font-size: 45px;
+line-height: 100%;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+color: rgba(0, 0, 0, 0.8);
+padding-top: 2rem;
+}
+
+.details{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+.grey{
+    align-self: flex-start;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 100%;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    
+}
+
+div a {
+    background: #A9A19E;
+    display:flex;
+    justify-content: center;
+    width: 1002px;
+    height: 68px;  
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+.s3 {
+    height: 30rem;
+}
